@@ -16,6 +16,7 @@
             width: 80%;
             margin: 20px auto;
             border-collapse: collapse;
+            table-layout: fixed; /* 添加这一行确保列宽固定 */
         }
         td {
             border: 1px solid #ddd;
@@ -26,8 +27,11 @@
             width: 40%;
             text-align: center;
         }
-        .text-cell {
-            width: 60%;
+        .text-cell-1 {
+            width: 30%; /* 第一列文本单元格 */
+        }
+        .text-cell-2 {
+            width: 30%; /* 第二列文本单元格 */
         }
         img {
             max-width: 100%;
@@ -44,10 +48,10 @@
             <td class="image-cell">
                 <img src="img/sh.jpg" alt="浦东">
             </td>
-            <td class="text-cell">
+            <td class="text-cell-1">
                 <h2>浦东</h2>
             </td>
-            <td class="text-cell">
+            <td class="text-cell-2">
                 <h2>东方明珠</h2>
                 <p>开放时间：9:00-21:00</p>
                 <p>地址：浦东新区世纪大道1号</p>
@@ -58,7 +62,7 @@
             <td class="image-cell">
                 <img src="https://imagepphcloud.thepaper.cn/pph/image/306/608/98.jpg" alt="上海外滩">
             </td>
-            <td class="text-cell">
+            <td class="text-cell-1">
                 <h2>外滩</h2>
                 <p>这是上海最有代表性的景点之一，矗立着52幢风格迥异的古典复兴大楼</p>
             </td>
@@ -67,7 +71,7 @@
             <td class="image-cell">
                 <img src="https://imagepphcloud.thepaper.cn/pph/image/306/608/119.jpg" alt="上海中华艺术馆">
             </td>
-            <td class="text-cell">
+            <td class="text-cell-1">
                 <h2>中华艺术宫</h2>
             </td>
         </tr>
