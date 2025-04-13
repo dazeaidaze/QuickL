@@ -6,54 +6,85 @@
     <title>欢迎访问上海</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
+            font-family: "Microsoft YaHei", Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
         }
+
+        header {
+            background-color: #FF7F00;
+            padding: 30px 20px;
+            text-align: center;
+            color: white;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
         h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        nav {
+            margin: 30px auto;
             text-align: center;
-            color: #FF7F00;
         }
-        table {
-            width: 80%;
-            margin: 0 auto;
-            border-collapse: collapse;
-        }
-        th, td {
+
+        nav a {
+            display: inline-block;
+            margin: 10px 15px;
+            padding: 10px 20px;
+            background-color: white;
             border: 1px solid #ddd;
-            padding: 12px;
-            text-align: center;
-        }
-        th {
-            background-color: #f2f2f2;
-        }
-        a {
+            border-radius: 8px;
             text-decoration: none;
             color: #0066cc;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
         }
-        a:hover {
-            color: #ff6600;
-            text-decoration: underline;
+
+        nav a:hover {
+            color: #fff;
+            background-color: #ff6600;
+            border-color: #ff6600;
+        }
+
+        .content {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            line-height: 1.8;
+            font-size: 1.1em;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+        }
+
+        .content p {
+            margin-bottom: 1.2em;
         }
     </style>
 </head>
 <body>
-    <h1>欢迎访问上海</h1>
-    <table>
-        <tr>
-            <td><a href="https://dazeaidaze.github.io/QuickL/" target="_blank">首页</a></td>
-            <td><a href="https://dazeaidaze.github.io/QuickL/sh.html" target="_blank">景点</a></td>
-            <td><a href="https://dazeaidaze.github.io/QuickL/jt.html" target="_blank">交通</a></td>
-            <td><a href="https://dazeaidaze.github.io/QuickL/ct.html" target="_blank">餐厅</a></td>
-            <td><a href="https://dazeaidaze.github.io/QuickL/ditu.html" target="_blank">地图</a></td>
-        </tr>
-    </table>
-    <table>
-           
-            <p>上海市，简称沪，别称申，是中华人民共和国直辖市，中国的经济、金融、贸易、航运、商业、上游制造和对外开放中心</p>
-            <p>上海也是一座港口城市[4]，是中国人口第二多的城市，是中国最发达的城市之一，也是一座全球城市。</p>
-            <p>上海位于中国东部海岸线的中心，长江三角洲最东部，东临东海，南濒杭州湾，西接江苏、浙江两省，北端的崇明岛处于长江入海口中，与周围的江苏、浙江、安徽三省多个城市共同构成了长江三角洲城市群[</p>5
 
-    </table>
+    <header>
+        <h1>欢迎访问上海</h1>
+    </header>
+
+    <nav>
+        <a href="https://dazeaidaze.github.io/QuickL/" target="_blank">首页</a>
+        <a href="https://dazeaidaze.github.io/QuickL/sh.html" target="_blank">景点</a>
+        <a href="https://dazeaidaze.github.io/QuickL/jt.html" target="_blank">交通</a>
+        <a href="https://dazeaidaze.github.io/QuickL/ct.html" target="_blank">餐厅</a>
+        <a href="https://dazeaidaze.github.io/QuickL/ditu.html" target="_blank">地图</a>
+    </nav>
+
+    <section class="content">
+        <p>上海市，简称沪，别称申，是中华人民共和国直辖市，中国的经济、金融、贸易、航运、商业、上游制造和对外开放中心。</p>
+        <p>上海也是一座港口城市，是中国人口第二多的城市，是中国最发达的城市之一，也是一座全球城市。</p>
+        <p>上海位于中国东部海岸线的中心，长江三角洲最东部，东临东海，南濒杭州湾，西接江苏、浙江两省，北端的崇明岛处于长江入海口中，与周围的江苏、浙江、安徽三省多个城市共同构成了长江三角洲城市群。</p>
+    </section>
 
 </body>
 </html>
