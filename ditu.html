@@ -4,28 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>地图</title>
-    <style>
-        /* 简单的样式 */
+<style>
+        H1{
+            text-align: center;
+        }
         body {
             font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
-            background-color: #f0f0f0;
+            margin: 20px;
+        }
+        table {
+            width: 80%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            table-layout: fixed; /* 添加这一行确保列宽固定 */
+        }
+        td {
+            border: 1px solid #ddd;
+            padding: 15px;
+            vertical-align: top;
+        }
+        .image-cell {
+            width: 40%;
+            text-align: center;
+        }
+        .text-cell-1 {
+            width: 30%; /* 第一列文本单元格 */
+        }
+        .text-cell-2 {
+            width: 30%; /* 第二列文本单元格 */
         }
         img {
-            width: 80%; /* 根据需要调整图片宽度 */
+            max-width: 100%;
             height: auto;
-            margin-bottom: 20px;
-        }
-        p {
-            font-size: 1.2em;
-            text-align: center;
-            max-width: 80%;
+            display: block;
+            margin: 0 auto;
         }
     </style>
 </head>
@@ -40,6 +52,13 @@
             <td><a href="https://dazeaidaze.github.io/QuickL/ditu.html" target="_blank">地图</a></td>
         </tr>
     </table>
-
+     <table>
+        <tr>
+          <img src="img/sh_map.png" alt="上海地图"> 
+        </tr>
+        <tr>
+            <p>上海景点众多，交通方便</p>
+        </tr>
+    </table>
 </body>
 </html>
